@@ -19,6 +19,6 @@ git@github.com:cmosalikanti/karate-testing.git
 2. Open a terminal and navigate to the folder 'karate-testing'
 3. Run the below command:
 ```
-mvn clean test
+./mvnw clean test
 ```
 4. Import the project into your favourite IDE.

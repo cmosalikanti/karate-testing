@@ -11,11 +11,12 @@ Feature:  Find users at Reqres portal
     When method Get
     Then status 200
     And match response.page == 1
+    * def data = response.data
     * def firstUser = response.data[0]
-    And match firstUser.id == 1
-    And match firstUser.first_name == 'George'
-    And match each response.data contains { id: '#number'}
-    And match each response.data contains { first_name: '#string'}
+    * match firstUser.id == 1
+    * match firstUser.first_name == 'George'
+    * match each data contains { id: '#number'}
+    * match each data contains { first_name: '#string'}
 
   Scenario: User not found
     And path '/api/users/23'
