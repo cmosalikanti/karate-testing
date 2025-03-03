@@ -22,3 +22,9 @@ git@github.com:cmosalikanti/karate-testing.git
 ./mvnw clean test
 ```
 4. Import the project into your favourite IDE.
+
+## Running a subset of tests (via tags)
+```
+./mvnw clean test -Dkarate.options="--tags @createUser"
+
+```

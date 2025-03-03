@@ -1,3 +1,4 @@
+@createUser
 Feature:  Create a user
 
   Background:
