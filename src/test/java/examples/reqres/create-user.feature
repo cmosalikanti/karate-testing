@@ -22,3 +22,4 @@ Feature:  Create a user
     And match response.name == 'John'
     And match response.working == true
     * print 'Name is:' + response.name
+    * call read('classpath:helpers/login.feature')
